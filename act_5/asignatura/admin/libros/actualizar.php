@@ -51,7 +51,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             if (empty($errores)) {
                 $peticionActualizar = "UPDATE libros SET isbn = '$isbn', nombre = '$nombre', autor = '$autor', precio = '$precio', editorial = '$editorial', imagen = '$imagen' WHERE id = $id";
                 if (mysqli_query($conexion, $peticionActualizar)) {
-                    header('Location: listar.php'); // Redirige a listar.php después de la actualización
+                    header('Location: mostrar_datos.php'); // Redirige a listar.php después de la actualización
                     exit();
                 } else {
                     echo "Error al actualizar los datos: " . mysqli_error($conexion);
@@ -76,7 +76,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <title>Editar Libro</title>
 </head>
 <body>
-    <a href="listar.php">Regresar</a>
+    <a href="mostrar.php">Regresar</a>
     <?php foreach ($errores as $error): ?>
         <div style="background-color: black; color: red;"><?php echo $error ?></div>
     <?php endforeach ?>

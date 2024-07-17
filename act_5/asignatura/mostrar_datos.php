@@ -41,7 +41,7 @@ $resultado = mysqli_query($conexion, $query);
                         <td><?php echo $libro['editorial']; ?></td>
                         <td><img src="<?php echo $libro['imagen']; ?>" alt="<?php echo $libro['nombre']; ?>" width="50"></td>
                         <td>
-                            <a href="editar.php?id=<?php echo $libro['id']; ?>">Editar</a>
+                            <a href="act_5/asignatura/admin/libros/actualizar.php echo $libro['id']; ?>">Editar</a>
                         </td>
                     </tr>
                 <?php } ?>

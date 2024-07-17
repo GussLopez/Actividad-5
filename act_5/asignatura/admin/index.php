@@ -9,7 +9,7 @@
 
 <body>
     <h1>Opciones</h1>
-    <a href="/act_5/asignatura/admin/libros/crear.php">Registrar un libro</a>
+    <a href="libros/crear.php">Registrar un libro</a>
     <a href="libros/actualizar.php">Editar un libro</a>
     <a href="">Eliminar un libro</a>
     <a href=""></a>
