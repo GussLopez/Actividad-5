@@ -1,0 +1,34 @@
+.tabla-datos{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+table{
+    border: solid 2px rgb(82, 82, 82);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gainsboro;
+}
+
+th{
+    border: solid 1px rgb(20, 20, 20);
+    padding: 5px;
+}
+
+tr{
+    border: solid 1px black;
+}
+
+td{
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+td:hover{
+    background-color: red;
+    color: white;
+    transition: all .5s;
+    transform: scale(1.5);
+    border: 0;
+}
